@@ -54,11 +54,11 @@ React(vite)
  Clone or download the project
 
 Install Python packages: 
-pip install  -Playwright (browser automation)  
-- BeautifulSoup4 (HTML parsing)  
-- requests (HTTP requests)  
-- axe-core CLI (for accessibility)  
-- Node.js (axe install)
+pip install  -Playwright 
+- BeautifulSoup4 
+- requests 
+- axe-core CLI
+
 
  Run playwright install
 
@@ -69,7 +69,7 @@ pip install  -Playwright (browser automation)
 Install react packages
   -npm install axios 
   -npm install  react-tabs
-# ---Design Overview (Design structure)----.
+# --- Backend Design Overview ----.
 
  
  Main driver - `check_url(url)`
@@ -152,3 +152,63 @@ Large Images - `check_large_images()`
 Content Analysis - `check_content_structure()`     
 
     - Analyzes word count and most frequent words    
+
+
+
+ ## Backend Design Overview (Flask API)
+
+|  Component                 |  Details                                                    |
+| -------------------------- | ----------------------------------------------------------- |
+| `Flask(__name__)`          | Initializes the Flask app                                   |
+| `CORS(app)`                | Enables Cross-Origin support so React can send requests     |
+| `@app.route('/api/audit')` | Defines the main POST API endpoint `/api/audit`             |
+| `request.get_json()`       | Extracts JSON data (`url`) from the request sent by React   |
+| `Web_audit()`              | Creates an object of the audit class to run all checks      |
+| `check_url(url)`           | Main method that runs all audit functions and saves to JSON |
+| `web_audit_result.json`    | JSON file where the audit results are stored temporarily    |
+| `json.load(f)`             | Reads the stored result and prepares it for sending back    |
+| `return jsonify(data)`     | Sends the audit report back to React as a JSON response     |
+
+
+##Frontend Design Overview (React + Vite)
+
+
+|  Component / Function         |  Description                                                              |
+| ----------------------------- | ------------------------------------------------------------------------- |
+| `useState()`                  | React hook to manage `url` (input) and `result` (API response)            |
+| `setUrl()`                    | Stores the user-typed URL from the input field                            |
+| `setResult()`                 | Updates result state with data received from backend                      |
+| `handleAudit()`               | Function triggered on button click – sends a POST request to `/api/audit` |
+| `axios.post()`                | Sends URL to Flask backend, receives audit result JSON                    |
+| `Tabs`, `TabList`, `TabPanel` | React-tabs components used to show results in a clean, tab-based layout   |
+| `Object.keys(result)`         | Used to dynamically create tab names (e.g., SEO, Performance)             |
+| `Object.entries(result)`      | Used to loop through the audit result and show each section's data        |
+| `<pre>` block                 | Displays JSON data in a formatted, readable way                           |
+| `input[type="search"]`        | Input box for entering the website URL                                    |
+| `button.onClick()`            | Triggers `handleAudit()` to start the audit process                       |
+
+
+
+##Data Flow
+
+| Step | Action                                                             |
+| ---- | ------------------------------------------------------------------ |
+| 1️⃣  | User enters a URL in the search box                                |
+| 2️⃣  | User clicks the **Audit** button                                   |
+| 3️⃣  | `handleAudit()` sends the URL to `http://localhost:5000/api/audit` |
+| 4️⃣  | Flask backend runs the audit and returns `web_audit_result.json`   |
+| 5️⃣  | React receives and stores the result in `result` state             |
+| 6️⃣  | React renders each section (SEO, Performance, etc.) as tabs        |
+| 7️⃣  | When user clicks a tab, detailed JSON data is shown inside `<pre>` |
+
+
+
+##Folder Structure Suggestion
+
+frontend/
+├── App.jsx
+├── App.css
+
+backend/
+├── App.py
+├── web_audit.py
