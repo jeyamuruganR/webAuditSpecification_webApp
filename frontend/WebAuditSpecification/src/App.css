@@ -116,7 +116,10 @@ section .searchBox .icon {
   border-bottom: 2px solid #ccc;
   margin-bottom: 10px;
   padding-left: 0;
+
 }
+
+
 
 .react-tabs__tab {
   list-style: none;

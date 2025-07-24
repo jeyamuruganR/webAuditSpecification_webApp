@@ -4,6 +4,7 @@ import axios from 'axios';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
+
 function App() {
   const [url, setUrl] = useState('');
   const [result, setResult] = useState(null);
@@ -45,18 +46,33 @@ function App() {
                         {Object.keys(result).map((section, index) => (
                             <Tab key={index}>{section}</Tab>
                         ))}
+                       
                     </TabList>
 
                     {Object.entries(result).map(([section, data], index) => (
                         <TabPanel key={index}>
-                            <h3>{section}</h3>
+                          <h3>{section}</h3>
+
+                          {section.toLowerCase() === "mobile view" && typeof data === "string" && data.includes("mobile_view.png") ? (
+                            <div>
+                              <p>{data}</p>
+
+                              <img
+                                src="backend\mobile_view.png"
+                                alt="Mobile Screenshot"
+                                style={{ maxWidth: '100%', border: '1px solid #ccc', marginTop: '10px' }}
+                              />
+                            </div>
+                          ) : (
                             <pre style={{ background: '#f4f4f4', padding: '10px' }}>
-                                {typeof data === 'object'
-                                    ? JSON.stringify(data, null, 2)
-                                    : data}
+                              {typeof data === 'object' ? JSON.stringify(data, null, 2) : data}
                             </pre>
+                          )}
                         </TabPanel>
                     ))}
+
+
+
                 </Tabs>
             ) : (
                 <p>Enter a URL and click Audit to get started.</p>

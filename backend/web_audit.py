@@ -7,6 +7,8 @@ from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 import json
 import subprocess
+import threading
+import  time
 
 
 class Web_audit:
@@ -94,7 +96,7 @@ class Web_audit:
                 iphone = p.devices["iPhone 12"]
                 browser = p.webkit.launch()
 
-                # 👇 ignore HTTPS errors here
+                #  ignore HTTPS errors here
                 context = browser.new_context(**iphone, ignore_https_errors=True)
                 page = context.new_page()
 
@@ -356,16 +358,18 @@ class Web_audit:
 
             print("--------------------------------------")
             print(" Checking Broken Links...")
-            broken_links, total_checked = self.find_broken_links(html, url)
-            audit_result["Broken Links Checked"] = total_checked
-            audit_result["Broken Links"] = broken_links
-            print(f"Total links checked: {total_checked}")
-            if broken_links:
-                for link, code in broken_links:
-                    print(f"{link}: {code}")
-            else:
-                print(" No broken links found")
 
+            def broken_links_thread():
+                print("--------------------------------------")
+                print(" Checking Broken Links (in thread)...")
+                broken_links, total_checked = self.find_broken_links(html, url)
+                audit_result["Broken Links Checked"] = total_checked
+                audit_result["Broken Links"] = broken_links
+                print("Broken Links",broken_links)
+
+
+            thread = threading.Thread(target=broken_links_thread)
+            thread.start()
             print("--------------------------------------")
             print(" Mobile Friendliness...")
             mobile_result = self.check_mobile_view(url)
