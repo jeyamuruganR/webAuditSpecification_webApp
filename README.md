@@ -68,7 +68,7 @@ pip install  -Playwright
 
 Install react packages
   -npm install axios 
-  -npm install  react-tabs
+
 # --- Backend Design Overview ----.
 
  
@@ -172,20 +172,26 @@ Content Analysis - `check_content_structure()`
 
 ##Frontend Design Overview (React + Vite)
 
-
-|  Component / Function         |  Description                                                              |
-| ----------------------------- | ------------------------------------------------------------------------- |
-| `useState()`                  | React hook to manage `url` (input) and `result` (API response)            |
-| `setUrl()`                    | Stores the user-typed URL from the input field                            |
-| `setResult()`                 | Updates result state with data received from backend                      |
-| `handleAudit()`               | Function triggered on button click – sends a POST request to `/api/audit` |
-| `axios.post()`                | Sends URL to Flask backend, receives audit result JSON                    |
-| `Tabs`, `TabList`, `TabPanel` | React-tabs components used to show results in a clean, tab-based layout   |
-| `Object.keys(result)`         | Used to dynamically create tab names (e.g., SEO, Performance)             |
-| `Object.entries(result)`      | Used to loop through the audit result and show each section's data        |
-| `<pre>` block                 | Displays JSON data in a formatted, readable way                           |
-| `input[type="search"]`        | Input box for entering the website URL                                    |
-| `button.onClick()`            | Triggers `handleAudit()` to start the audit process                       |
+| Component / Function         | Description                                                                |
+| ---------------------------- | -------------------------------------------------------------------------- |
+| `useState()`                 | React hook to manage state for `url`, `result`, and `loading`              |
+| `setUrl()`                   | Updates the URL state when user types in the input box                     |
+| `setResult()`                | Stores the audit result or error message received from backend             |
+| `setLoading()`               | Manages the loader display while waiting for audit result                  |
+| `handleAudit()`              | Triggered on button click — sends POST request to `/api/audit`             |
+| `axios.post()`               | Sends entered URL to backend (Flask or FastAPI), expects audit result JSON |
+| `input[type="search"]`       | Text input for the user to enter a website URL                             |
+| `button.onClick()`           | Runs `handleAudit()` to start the audit process                            |
+| `disabled={loading}`         | Disables the button while audit is in progress                             |
+| `loading ? ... : ...`        | Conditional rendering to show loader or result                             |
+| `typeof result === 'string'` | If backend returns a string (error or message), display it as a `<p>`      |
+| `Object.entries(result)`     | Dynamically loops over result object to display each section (e.g., SEO)   |
+| `typeof value === 'object'`  | Checks if nested result (like SEO, Performance) is an object               |
+| `JSON.stringify(v, null, 2)` | Formats deeply nested JSON for readability                                 |
+| `<ul>`, `<li>`               | Lists each audit property inside each category (like key: value pairs)     |
+| `<div className="loader">`   | Shows text-based loader during API call                                    |
+| `<div className="result">`   | Displays audit output or helpful message if nothing is available           |
+| `App.css`                    | Styles the header, input, button, results, loader, and responsiveness      |
 
 
 

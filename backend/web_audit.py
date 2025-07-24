@@ -104,7 +104,7 @@ class Web_audit:
                 page.screenshot(path="mobile_view.png")
 
                 browser.close()
-                return "Mobile screenshot saved as mobile_view.png"
+                return "mobile_view.png"
         except Exception as e:
             return f"Mobile view check failed: {str(e)}"
 
@@ -359,17 +359,13 @@ class Web_audit:
             print("--------------------------------------")
             print(" Checking Broken Links...")
 
-            def broken_links_thread():
-                print("--------------------------------------")
-                print(" Checking Broken Links (in thread)...")
-                broken_links, total_checked = self.find_broken_links(html, url)
-                audit_result["Broken Links Checked"] = total_checked
-                audit_result["Broken Links"] = broken_links
-                print("Broken Links",broken_links)
+            print("--------------------------------------")
+            print(" Checking Broken Links (in thread)...")
+            broken_links, total_checked = self.find_broken_links(html, url)
+            audit_result["Broken Links Checked"] = total_checked
+            audit_result["Broken Links"] = broken_links
+            print("Broken Links", broken_links)
 
-
-            thread = threading.Thread(target=broken_links_thread)
-            thread.start()
             print("--------------------------------------")
             print(" Mobile Friendliness...")
             mobile_result = self.check_mobile_view(url)

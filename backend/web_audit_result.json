@@ -1,99 +1,54 @@
 {
     "URL Status": "Valid",
     "Meta Tags": {
-        "Title": "Missing Title",
-        "Meta Description": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with ease, all for free.",
+        "Title": "jeyamurugarajenthiran",
+        "Meta Description": "Missing Description",
         "Canonical URL": "Missing Canonical",
         "Open Graph Title": "Missing OG Title"
     },
     "Link Balance": {
         "Internal Links": 0,
-        "External Links": 10
+        "External Links": 0
     },
-    "Mobile View": "Mobile view check failed: Page.goto: Timeout 10000ms exceeded.\nCall log:\n  - navigating to \"https://web.whatsapp.com/\", waiting until \"load\"\n",
-    "Viewport Meta": "Viewport tag found: width=device-width,initial-scale=1,maximum-scale=2,shrink-to-fit=no",
+    "Broken Links Checked": 0,
+    "Broken Links": [],
+    "Mobile View": "Mobile screenshot saved as mobile_view.png",
+    "Viewport Meta": "Viewport tag found: width=device-width, initial-scale=1.0",
     "Performance": {
-        "Performance Error": "Page.goto: Timeout 10000ms exceeded.\nCall log:\n  - navigating to \"https://web.whatsapp.com/\", waiting until \"load\"\n"
+        "First Byte Time (FCP)": "378 ms",
+        "DOM Complete Time": "700 ms",
+        "Total Load Time": "700 ms"
     },
     "Render Blocking": {
         "Blocking JS": [
-            "data:application/x-javascript; charset=utf-8;base64,Oy8qRkJfUEtHX0RFTElNKi8KCnZhciBkYXRhRWxlbWVudD1kb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiZW52anNvbiIpO2lmKGRhdGFFbGVtZW50IT1udWxsKXt2YXIgY29weVZhcmlhYmxlcz1mdW5jdGlvbihhKXtmb3IodmFyIGIgaW4gdmFyaWFibGVzKWFbYl09dmFyaWFibGVzW2JdfSx2YXJpYWJsZXM9SlNPTi5wYXJzZShkYXRhRWxlbWVudC50ZXh0Q29udGVudCk7d2luZG93LnJlcXVpcmVMYXp5P3dpbmRvdy5yZXF1aXJlTGF6eShbIkVudiJdLGNvcHlWYXJpYWJsZXMpOih3aW5kb3cuRW52PXdpbmRvdy5FbnZ8fHt9LGNvcHlWYXJpYWJsZXMod2luZG93LkVudikpfQovLyMgc291cmNlVVJMPWh0dHBzOi8vc3RhdGljLndoYXRzYXBwLm5ldC9yc3JjLnBocC92NC95TC9yL2RiZ3JNc25EMThwLmpzCg==",
-            "data:application/x-javascript; charset=utf-8;base64,Oy8qRkJfUEtHX0RFTElNKi8KCl9fYW5ub3RhdG9yPWZ1bmN0aW9uKGEpe3JldHVybiBhfSxfX2Rfc3R1Yj1bXSxfX2Q9ZnVuY3Rpb24oYSxiLGMsZCl7X19kX3N0dWIucHVzaChbYSxiLGMsZF0pfSxfX3JsX3N0dWI9W10scmVxdWlyZUxhenk9ZnVuY3Rpb24oKXtfX3JsX3N0dWIucHVzaChhcmd1bWVudHMpfTsKLy8jIHNvdXJjZVVSTD1odHRwczovL3N0YXRpYy53aGF0c2FwcC5uZXQvcnNyYy5waHAvdjQveTIvci9jTWRfU1pvdjlFaS5qcwo=",
-            "data:application/x-javascript; charset=utf-8;base64,Oy8qRkJfUEtHX0RFTElNKi8KCl9idGxkcj17fSxfbm93SW5sPWZ1bmN0aW9uKCl7dmFyIGE9d2luZG93LnBlcmZvcm1hbmNlO3JldHVybiBhJiZhLm5vdyYmYS50aW1pbmcmJmEudGltaW5nLm5hdmlnYXRpb25TdGFydD9hLm5vdygpK2EudGltaW5nLm5hdmlnYXRpb25TdGFydDpuZXcgRGF0ZSgpLmdldFRpbWUoKX0sX3FwbElubD1mdW5jdGlvbigpe3ZhciBhPXtjbGllbnQ6e319O3JldHVybnthZGRQb2ludDpmdW5jdGlvbihiKXthLmNsaWVudFtiXT1fbm93SW5sKCl9LGdldFBvaW50czpmdW5jdGlvbigpe3JldHVybiBhfX19KCksX3FwbElubC5hZGRQb2ludCgiaHRtbEZsdXNoIik7Ci8vIyBzb3VyY2VVUkw9aHR0cHM6Ly9zdGF0aWMud2hhdHNhcHAubmV0L3JzcmMucGhwL3Y0L3lCL3Ivb3Y5aC1WOExLS1QuanMK",
-            "data:application/x-javascript; charset=utf-8;base64,Oy8qRkJfUEtHX0RFTElNKi8KCndpbmRvdy5vcGVuRGF0YWJhc2UmJih3aW5kb3cub3BlbkRhdGFiYXNlPWZ1bmN0aW9uKCl7dGhyb3cgbmV3IEVycm9yKCl9KTsKLy8jIHNvdXJjZVVSTD1odHRwczovL3N0YXRpYy53aGF0c2FwcC5uZXQvcnNyYy5waHAvdjQveVkvci85Qk95ZURLTC1kQy5qcwo=",
-            "data:application/x-javascript; charset=utf-8;base64,Oy8qRkJfUEtHX0RFTElNKi8KCihmdW5jdGlvbigpe2Z1bmN0aW9uIGEoYSl7cmV0dXJuIGEucGFyZW50RWxlbWVudCE9PWRvY3VtZW50LmJvZHkmJmEucGFyZW50RWxlbWVudCE9PWRvY3VtZW50LmhlYWR9ZnVuY3Rpb24gYihhKXtyZXR1cm4gYS5ub2RlTmFtZT09PSJTQ1JJUFQifHxhLm5vZGVOYW1lPT09IkxJTksiJiYoKGE9YyhhKSk9PW51bGw/dm9pZCAwOmEuYXN5bmNDc3MpfWZ1bmN0aW9uIGMoYSl7cmV0dXJuIShhLmRhdGFzZXQgaW5zdGFuY2VvZiB3aW5kb3cuRE9NU3RyaW5nTWFwKT9udWxsOmEuZGF0YXNldH1mdW5jdGlvbiBkKGQpe3ZhciBlO3RyeXtpZihkLm5vZGVUeXBlIT09Tm9kZS5FTEVNRU5UX05PREUpcmV0dXJufWNhdGNoKGEpe3JldHVybn1pZihhKGQpfHwhYihkKSlyZXR1cm47dmFyIGY9KGU9YyhkKSk9PW51bGw/dm9pZCAwOmUuYm9vdGxvYWRlckhhc2g7aWYoZiE9bnVsbCYmZiE9PSIiKXt2YXIgZz1udWxsLGg9ZnVuY3Rpb24oKXt3aW5kb3cuX2J0bGRyW2ZdPTEsZz09bnVsbHx8ZygpfTtnPWZ1bmN0aW9uKCl7ZC5yZW1vdmVFdmVudExpc3RlbmVyKCJsb2FkIixoKSxkLnJlbW92ZUV2ZW50TGlzdGVuZXIoImVycm9yIixoKX07ZC5hZGRFdmVudExpc3RlbmVyKCJsb2FkIixoKTtkLmFkZEV2ZW50TGlzdGVuZXIoImVycm9yIixoKX19QXJyYXkuZnJvbShkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCdzY3JpcHQsbGlua1tkYXRhLWFzeW5jLWNzcz0iMSJdJykpLmZvckVhY2goZnVuY3Rpb24oYSl7cmV0dXJuIGQoYSl9KTt2YXIgZT1uZXcgTXV0YXRpb25PYnNlcnZlcihmdW5jdGlvbihhLGIpe2EuZm9yRWFjaChmdW5jdGlvbihhKXthLnR5cGU9PT0iY2hpbGRMaXN0IiYmQXJyYXkuZnJvbShhLmFkZGVkTm9kZXMpLmZvckVhY2goZnVuY3Rpb24oYSl7ZChhKX0pfSl9KTtlLm9ic2VydmUoZG9jdW1lbnQuZ2V0RWxlbWVudHNCeVRhZ05hbWUoImh0bWwiKVswXSx7YXR0cmlidXRlczohMSxjaGlsZExpc3Q6ITAsc3VidHJlZTohMH0pfSkoKTsKLy8jIHNvdXJjZVVSTD1odHRwczovL3N0YXRpYy53aGF0c2FwcC5uZXQvcnNyYy5waHAvdjQveTUvci9ra3RVYUg5cGVuXy5qcwo=",
-            "data:application/x-javascript; charset=utf-8;base64,Oy8qRkJfUEtHX0RFTElNKi8KCiJ1c2Ugc3RyaWN0Ijt0cnl7dmFyIFRIRU1FX0tFWT0idGhlbWUiLFNZU1RFTV9USEVNRV9NT0RFPSJzeXN0ZW0tdGhlbWUtbW9kZSIsc3BsYXNoc2NyZWVuVmFyaWFibGVNYXA9eyItLXNwbGFzaHNjcmVlbi1zdGFydHVwLWJhY2tncm91bmQiOntsaWdodDoiI0Y3RjVGMyIsZGFyazoiIzBBMTAxNCJ9LCItLXNwbGFzaHNjcmVlbi1zdGFydHVwLWJhY2tncm91bmQtcmdiIjp7bGlnaHQ6IjI0NywgMjQ1LCAyNDMiLGRhcms6IjEwLCAxNiwgMjAifSwiLS1zcGxhc2hzY3JlZW4tc3RhcnR1cC1pY29uIjp7bGlnaHQ6InJnYmEoMCwgMCwgMCwgMC4xKSIsZGFyazoicmdiYSgyNTUsIDI1NSwgMjU1LCAwLjIpIn0sIi0tc3BsYXNoc2NyZWVuLXByaW1hcnktdGl0bGUiOntsaWdodDoiIzBBMTAxNCIsZGFyazoiI0Y3RjhGQSJ9LCItLXNwbGFzaHNjcmVlbi1zZWNvbmRhcnktbGlnaHRlciI6e2xpZ2h0OiIjNUI2MzY4IixkYXJrOiIjOEQ5NTk5In0sIi0tc3BsYXNoc2NyZWVuLXByb2dyZXNzLXByaW1hcnkiOntsaWdodDoiIzFEQUE2MSIsZGFyazoiIzIxQzA2MyJ9LCItLXNwbGFzaHNjcmVlbi1wcm9ncmVzcy1iYWNrZ3JvdW5kIjp7bGlnaHQ6InJnYmEoMCwgMCwgMCwgMC4xKSIsZGFyazoicmdiYSgyNTUsIDI1NSwgMjU1LCAwLjEpIn19LHByZWZlcnNDb2xvclNjaGVtZU1vZGU9bnVsbDtpZih3aW5kb3cubWF0Y2hNZWRpYSl7dmFyIHByZWZlcnNEYXJrPXdpbmRvdy5tYXRjaE1lZGlhKCIocHJlZmVycy1jb2xvci1zY2hlbWU6IGRhcmspIikscHJlZmVyc0xpZ2h0PXdpbmRvdy5tYXRjaE1lZGlhKCIocHJlZmVycy1jb2xvci1zY2hlbWU6IGxpZ2h0KSIpO3ByZWZlcnNEYXJrLm1hdGNoZXM9PT0hMD9wcmVmZXJzQ29sb3JTY2hlbWVNb2RlPSJkYXJrIjpwcmVmZXJzTGlnaHQubWF0Y2hlcyYmKHByZWZlcnNDb2xvclNjaGVtZU1vZGU9ImxpZ2h0Iil9dmFyIHN5c3RlbVRoZW1lTW9kZVNldD13aW5kb3cubG9jYWxTdG9yYWdlLmdldEl0ZW0oU1lTVEVNX1RIRU1FX01PREUpPT09InRydWUiLGNvbmZpZ3VyZWRUaGVtZT13aW5kb3cubG9jYWxTdG9yYWdlLmdldEl0ZW0oVEhFTUVfS0VZKTtzeXN0ZW1UaGVtZU1vZGVTZXQ/cHJlZmVyc0NvbG9yU2NoZW1lTW9kZT09PSJkYXJrIj9PYmplY3Qua2V5cyhzcGxhc2hzY3JlZW5WYXJpYWJsZU1hcCkuZm9yRWFjaChmdW5jdGlvbihhKXt2YXIgYjtyZXR1cm4oYj1kb2N1bWVudC5kb2N1bWVudEVsZW1lbnQpPT1udWxsP3ZvaWQgMDpiLnN0eWxlLnNldFByb3BlcnR5KGEsc3BsYXNoc2NyZWVuVmFyaWFibGVNYXBbYV0uZGFyayl9KTpwcmVmZXJzQ29sb3JTY2hlbWVNb2RlPT09ImxpZ2h0IiYmT2JqZWN0LmtleXMoc3BsYXNoc2NyZWVuVmFyaWFibGVNYXApLmZvckVhY2goZnVuY3Rpb24oYSl7dmFyIGI7cmV0dXJuKGI9ZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50KT09bnVsbD92b2lkIDA6Yi5zdHlsZS5zZXRQcm9wZXJ0eShhLHNwbGFzaHNjcmVlblZhcmlhYmxlTWFwW2FdLmxpZ2h0KX0pOmNvbmZpZ3VyZWRUaGVtZT09PSciZGFyayInP09iamVjdC5rZXlzKHNwbGFzaHNjcmVlblZhcmlhYmxlTWFwKS5mb3JFYWNoKGZ1bmN0aW9uKGEpe3ZhciBiO3JldHVybihiPWRvY3VtZW50LmRvY3VtZW50RWxlbWVudCk9PW51bGw/dm9pZCAwOmIuc3R5bGUuc2V0UHJvcGVydHkoYSxzcGxhc2hzY3JlZW5WYXJpYWJsZU1hcFthXS5kYXJrKX0pOihjb25maWd1cmVkVGhlbWU9PW51bGx8fGNvbmZpZ3VyZWRUaGVtZT09PScibGlnaHQiJykmJk9iamVjdC5rZXlzKHNwbGFzaHNjcmVlblZhcmlhYmxlTWFwKS5mb3JFYWNoKGZ1bmN0aW9uKGEpe3ZhciBiO3JldHVybihiPWRvY3VtZW50LmRvY3VtZW50RWxlbWVudCk9PW51bGw/dm9pZCAwOmIuc3R5bGUuc2V0UHJvcGVydHkoYSxzcGxhc2hzY3JlZW5WYXJpYWJsZU1hcFthXS5saWdodCl9KX1jYXRjaChhKXt9Ci8vIyBzb3VyY2VVUkw9aHR0cHM6Ly9zdGF0aWMud2hhdHNhcHAubmV0L3JzcmMucGhwL3Y0L3lOL3IvMUtlaEhwYVBwUnAuanMK",
-            "data:text/javascript;base64,cmVxdWlyZUxhenkoWyJTZXJ2ZXJKU1BheWxvYWRMaXN0ZW5lciJdLGZ1bmN0aW9uKG0pe20ucHJvY2VzcygpO30sbnVsbCwweDEwMCk="
+            "/jeyamuruganrajenthiran/assets/index-BADHgwnF.js"
         ],
         "Blocking CSS": [
-            "https://static.whatsapp.net/rsrc.php/v5/yr/l/0,cross/tPWkdFHJHCSKkeABwiW-jAerru35icbgr.css"
+            "/jeyamuruganrajenthiran/assets/index-OaCVQR9I.css"
         ]
     },
-    "Broken Links Checked": 6,
-    "Broken Links": [
-        [
-            "http://www.firefox.com/",
-            "No response"
-        ],
-        [
-            "https://www.opera.com/",
-            "No response"
-        ],
-        [
-            "https://www.opera.com/",
-            "No response"
-        ],
-        [
-            "https://support.apple.com/downloads/#safari",
-            "No response"
-        ]
-    ],
     "Unminified Assets": [
-        "https://static.whatsapp.net/rsrc.php/v5/yr/l/0,cross/tPWkdFHJHCSKkeABwiW-jAerru35icbgr.css",
-        "https://static.whatsapp.net/rsrc.php/v4/yn/r/fvmEVNNypr6.js",
-        "https://static.whatsapp.net/rsrc.php/v4ibds4/ya/l/en_GB-j/snrwJ_EFxh7kxmRfbSZJOQ9zA9mWSsx5RDijNxSefoyBy5CNehwbUCKWA6dFLO03DfUxiC-499hlNRonVhEevHbcTjMopYrXY7rAu2LJJjctuikjPInNwT_dbvsWqehdEtWwxtMGzg3JWUj.js",
-        "https://static.whatsapp.net/rsrc.php/v4i_MV4/yL/l/en_GB-j/lFeMZQs-lCp.js",
-        "https://static.whatsapp.net/rsrc.php/v4iVzj4/ye/l/en_GB-j/8W1JXod4DYu.js",
-        "https://static.whatsapp.net/rsrc.php/v4/yC/r/0q8h8vtobHg.js",
-        "https://static.whatsapp.net/rsrc.php/v4/yH/r/RIYPrHWLNY2.js"
+        "https://jeyamuruganr.github.io/jeyamuruganrajenthiran/assets/index-BADHgwnF.js"
     ],
     "Lazy Loading": {
-        "Total Images": 6,
-        "Non-Lazy Images": [
-            "/images/whatsapp/web/landing/logo-whatsapp.png",
-            "/images/whatsapp/web/landing/logo-chrome.png",
-            "/images/whatsapp/web/landing/logo-firefox.png",
-            "/images/whatsapp/web/landing/logo-edge.png",
-            "/images/whatsapp/web/landing/logo-opera.png",
-            "/images/whatsapp/web/landing/logo-safari.png"
-        ]
+        "Total Images": 0,
+        "Non-Lazy Images": "All images use lazy loading"
     },
     "Headings": {
-        "Total Headings Found": 1,
-        "Headings List": [
-            [
-                "h1",
-                "Browser not supported"
-            ]
-        ]
+        "Total Headings Found": 0,
+        "Headings List": []
     },
     "Indexability": {
-        "robots.txt Present": "Ok",
-        "sitemap.xml Present": "OK"
+        "robots.txt Present": "Missing",
+        "sitemap.xml Present": "Missing"
     },
     "Security Headers": {
-        "CSP": "default-src 'self' blob:;script-src blob: 'self' 'nonce-5rQbjTPz' 'report-sample' https://static.whatsapp.net https://*.youtube.com https://maps.googleapis.com https://maps.gstatic.com https://lens.google.com/upload;style-src data: blob: 'self' 'unsafe-inline' https://static.whatsapp.net https://fonts.googleapis.com;connect-src 'self' https://*.whatsapp.net https://www.facebook.com blob: https://crashlogs.whatsapp.net/wa_clb_data https://crashlogs.whatsapp.net/wa_fls_upload_check wss://*.web.whatsapp.com wss://web.whatsapp.com wss://web-fallback.whatsapp.com https://acs.whatsapp.com https://www.whatsapp.com https://dyn.web.whatsapp.com https://graph.whatsapp.com/graphql/ https://graph.facebook.com/graphql ws://web.whatsapp.com wss://web.whatsapp.com:5222 data: https://*.tenor.co https://*.giphy.com https://maps.googleapis.com https://lens.google.com/upload https://*.google.com https://meta-ohttp-relay-prod.fastly-edge.com;font-src data: 'self' https://static.whatsapp.net https://fonts.gstatic.com;img-src 'self' data: blob: https://*.whatsapp.net https://*.fbcdn.net *.tenor.co *.tenor.com *.giphy.com https://*.ytimg.com *.youtube.com https://maps.googleapis.com/maps/api/staticmap;media-src 'self' https://*.whatsapp.net https://*.cdninstagram.com https://*.fbcdn.net blob: mediastream: data: *.tenor.co *.tenor.com https://*.giphy.com;child-src 'self' blob: data:;frame-src 'self' blob: data: https://*.youtube.com;manifest-src 'self' blob: data:;object-src 'self' blob: data: https://lens.google.com/upload;worker-src *.whatsapp.com/static_resources/webworker_v1/init_script/ *.whatsapp.com/sw.js *.whatsapp.com/static_resources/webworker/pdf-worker/ *.whatsapp.com/static_resources/webworker/init_script/;block-all-mixed-content;upgrade-insecure-requests;, frame-ancestors https://*.whatsapp.com https://whatsapp.com;",
+        "CSP": "Missing",
         "X-Frame-Options": "Missing",
-        "X-XSS-Protection": "0",
-        "CORS (Access-Control-Allow-Origin)": "Missing"
+        "X-XSS-Protection": "Missing",
+        "CORS (Access-Control-Allow-Origin)": "*"
     },
-    "Cookies": [
-        {
-            "Name": "wa_ul",
-            "Secure": true,
-            "HttpOnly": false
-        }
-    ],
+    "Cookies": "No cookies found",
     "Mixed Content": "No mixed content found",
     "Redirects": "No redirects found",
     "Large Images": [],
