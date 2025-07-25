@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 import axios from 'axios';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   const [url, setUrl] = useState('');
@@ -45,7 +47,9 @@ function App() {
 
       <div className="result">
         {loading ? (
-          <div className="loader">Auditing... Please wait</div>
+          <div className="loader"><p>Please wait...</p>
+                <FontAwesomeIcon icon={faSpinner} spin size="1.5x" />
+              </div>
         ) : result ? (
           <div className="result-container">
             {typeof result === 'string' ? (

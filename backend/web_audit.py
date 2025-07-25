@@ -360,7 +360,7 @@ class Web_audit:
             print(" Checking Broken Links...")
 
             print("--------------------------------------")
-            print(" Checking Broken Links (in thread)...")
+            print(" Checking Broken Links...")
             broken_links, total_checked = self.find_broken_links(html, url)
             audit_result["Broken Links Checked"] = total_checked
             audit_result["Broken Links"] = broken_links

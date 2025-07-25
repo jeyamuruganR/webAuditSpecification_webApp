@@ -1,60 +1,140 @@
 {
     "URL Status": "Valid",
     "Meta Tags": {
-        "Title": "jeyamurugarajenthiran",
-        "Meta Description": "Missing Description",
+        "Title": "Wikipedia",
+        "Meta Description": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation.",
         "Canonical URL": "Missing Canonical",
-        "Open Graph Title": "Missing OG Title"
+        "Open Graph Title": "Wikipedia, the free encyclopedia"
     },
     "Link Balance": {
         "Internal Links": 0,
-        "External Links": 0
+        "External Links": 371
     },
-    "Broken Links Checked": 0,
-    "Broken Links": [],
-    "Mobile View": "Mobile screenshot saved as mobile_view.png",
-    "Viewport Meta": "Viewport tag found: width=device-width, initial-scale=1.0",
+    "Broken Links Checked": 369,
+    "Broken Links": [
+        [
+            "https://my.wikipedia.org/",
+            "No response"
+        ],
+        [
+            "https://commons.wikimedia.org/",
+            "No response"
+        ]
+    ],
+    "Mobile View": "mobile_view.png",
+    "Viewport Meta": "Viewport tag found: initial-scale=1,user-scalable=yes",
     "Performance": {
-        "First Byte Time (FCP)": "378 ms",
-        "DOM Complete Time": "700 ms",
-        "Total Load Time": "700 ms"
+        "First Byte Time (FCP)": "1496 ms",
+        "DOM Complete Time": "2357 ms",
+        "Total Load Time": "2357 ms"
     },
     "Render Blocking": {
         "Blocking JS": [
-            "/jeyamuruganrajenthiran/assets/index-BADHgwnF.js"
+            "portal/wikipedia.org/assets/js/index-6bf78c58fd.js",
+            "portal/wikipedia.org/assets/js/gt-ie9-ce3fe8e88d.js"
         ],
-        "Blocking CSS": [
-            "/jeyamuruganrajenthiran/assets/index-OaCVQR9I.css"
+        "Blocking CSS": "None"
+    },
+    "Unminified Assets": [],
+    "Lazy Loading": {
+        "Total Images": 1,
+        "Non-Lazy Images": [
+            "portal/wikipedia.org/assets/img/Wikipedia-logo-v2.png"
         ]
     },
-    "Unminified Assets": [
-        "https://jeyamuruganr.github.io/jeyamuruganrajenthiran/assets/index-BADHgwnF.js"
-    ],
-    "Lazy Loading": {
-        "Total Images": 0,
-        "Non-Lazy Images": "All images use lazy loading"
-    },
     "Headings": {
-        "Total Headings Found": 0,
-        "Headings List": []
+        "Total Headings Found": 6,
+        "Headings List": [
+            [
+                "h1",
+                "WikipediaThe Free Encyclopedia"
+            ],
+            [
+                "h2",
+                "1,000,000+articles"
+            ],
+            [
+                "h2",
+                "100,000+articles"
+            ],
+            [
+                "h2",
+                "10,000+articles"
+            ],
+            [
+                "h2",
+                "1,000+articles"
+            ],
+            [
+                "h2",
+                "100+articles"
+            ]
+        ]
     },
     "Indexability": {
-        "robots.txt Present": "Missing",
+        "robots.txt Present": "Ok",
         "sitemap.xml Present": "Missing"
     },
     "Security Headers": {
         "CSP": "Missing",
         "X-Frame-Options": "Missing",
         "X-XSS-Protection": "Missing",
-        "CORS (Access-Control-Allow-Origin)": "*"
+        "CORS (Access-Control-Allow-Origin)": "Missing"
     },
-    "Cookies": "No cookies found",
+    "Cookies": [
+        {
+            "Name": "GeoIP",
+            "Secure": true,
+            "HttpOnly": false
+        },
+        {
+            "Name": "WMF-Last-Access-Global",
+            "Secure": true,
+            "HttpOnly": true
+        },
+        {
+            "Name": "WMF-Uniq",
+            "Secure": true,
+            "HttpOnly": true
+        },
+        {
+            "Name": "NetworkProbeLimit",
+            "Secure": true,
+            "HttpOnly": false
+        },
+        {
+            "Name": "WMF-Last-Access",
+            "Secure": true,
+            "HttpOnly": true
+        }
+    ],
     "Mixed Content": "No mixed content found",
     "Redirects": "No redirects found",
     "Large Images": [],
     "Content Structure": {
-        "Total Word Count": 0,
-        "Top 5 Repeated Words": []
+        "Total Word Count": 38,
+        "Top 5 Repeated Words": [
+            [
+                "your",
+                3
+            ],
+            [
+                "reading",
+                2
+            ],
+            [
+                "the",
+                2
+            ],
+            [
+                "Save",
+                1
+            ],
+            [
+                "favorite",
+                1
+            ]
+        ]
     },
     "Accessibility": [
         " Accessibility audit failed: [WinError 2] The system cannot find the file specified"

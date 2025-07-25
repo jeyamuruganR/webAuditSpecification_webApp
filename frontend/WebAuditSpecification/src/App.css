@@ -140,15 +140,9 @@ section .searchBox .icon {
   color: #007bff;
   margin-top: 20px;
   text-align: center;
+  display:flex;
+  justify-content:center;
+  align-item:center;
+
 }
 
-.loader::after {
-  content: " ⏳";
-  animation: blink 1s infinite;
-  margin-left: 8px;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
